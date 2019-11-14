@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <form name="f1">
+        <input type="text" name="dis" />
+
+        <br />
+
+        <button type="button" onclick="f1.dis.value =''">C</button>
+
+        <br />
+
+        <button type="button" onclick="f1.dis.value += '1'">1</button>
+        <button type="button" onclick="f1.dis.value += '2'">2</button>
+        <button type="button" onclick="f1.dis.value += '3'">3</button>
+        <button type="button" onclick="f1.dis.value += '+'">+</button>
+        <br />
+
+        <button type="button" onclick="f1.dis.value += '4'">4</button>
+        <button type="button" onclick="f1.dis.value += '5'">5</button>
+        <button type="button" onclick="f1.dis.value += '6'">6</button>
+        <button type="button" onclick="f1.dis.value += '-'">-</button>
+        <br />
+
+        <button type="button" onclick="f1.dis.value += '7'">7</button>
+        <button type="button" onclick="f1.dis.value += '8'">8</button>
+        <button type="button" onclick="f1.dis.value += '9'">9</button>
+        <button type="button" onclick="f1.dis.value += '*'">*</button>
+        <br />
+
+        <button type="button" onclick="f1.dis.value += '0'">0</button>
+        <button type="button" onclick="f1.dis.value += '.'">.</button>
+        <button type="button" onclick="f1.dis.value = eval(f1.dis.value)">
+          =
+        </button>
+        <button type="button" onclick="f1.dis.value += '/'">/</button>
+      </form>
+    </div>
+  </body>
+</html>
